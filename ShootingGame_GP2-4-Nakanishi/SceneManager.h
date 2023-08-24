@@ -3,14 +3,14 @@
 
 //シーンマネージャークラス
 //各シーンの切り替えを設定する
-class SceneManager : public AbstractScene
+class SceneManager : public SceneBase
 {
 private:
-	AbstractScene* mScene; //現在のシーン
+	SceneBase* mScene; //現在のシーン
 
 public:
 	//コンストラクタ
-	SceneManager(AbstractScene* scene):mScene(scene){}
+	SceneManager(SceneBase* scene):mScene(scene){}
 
 	//デストラクタ
 	~SceneManager()
@@ -19,9 +19,9 @@ public:
 	}
 
 	//描画以外に関することを実装する
-	AbstractScene* Update()override;
+	SceneBase* Update();
 
 	//描画に関することを実装する
-	void Draw() const override;
+	void Draw()const override;
 };
 
