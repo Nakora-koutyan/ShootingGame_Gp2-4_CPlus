@@ -1,14 +1,14 @@
 #pragma once
 
-class AbstractScene
+class SceneBase
 {
 public:
 
 	//デストラクタ
-	virtual ~AbstractScene() {};
+	virtual ~SceneBase() {};
 
 	//描画以外の更新を実装
-	virtual AbstractScene* Update() = 0;
+	virtual SceneBase* Update() = 0;
 
 	//描画に関することを実装
 	virtual void Draw() const = 0;
