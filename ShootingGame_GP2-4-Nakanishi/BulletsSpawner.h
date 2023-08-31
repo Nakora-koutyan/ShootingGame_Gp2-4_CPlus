@@ -1,4 +1,5 @@
 #pragma once
+#include "CharaBase.h"
 class GameMain;
 class BulletsSpawner
 {
@@ -22,6 +23,6 @@ public:
 	virtual void Draw();
 
 	//’e‚ğ”­Ë‚·‚é‚½‚ß‚ÌŠÖ”
-	virtual void Shoot(GameMain*GameMain);
+	virtual void Shoot(GameMain* GameMain, float angle, float x, float y);
 };
 

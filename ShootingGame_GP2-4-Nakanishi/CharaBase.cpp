@@ -18,3 +18,6 @@ void CharaBase::Draw()
 void CharaBase::Hit()
 {
 }
+void CharaBase::GetPosition()
+{
+}

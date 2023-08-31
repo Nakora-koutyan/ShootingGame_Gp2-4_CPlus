@@ -1,7 +1,6 @@
 #pragma once
 #include "AbstractScene.h"
 #include "PadInput.h"
-#include "GameMain.h"
 
 class Title :public SceneBase
 {

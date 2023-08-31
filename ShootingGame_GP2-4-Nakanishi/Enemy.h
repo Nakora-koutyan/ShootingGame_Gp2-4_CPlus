@@ -1,13 +1,16 @@
 #pragma once
 #include "CharaBase.h"
 #include "DxLib.h"
+#include "BulletsSpawner.h"
 
 class Enemy :public CharaBase
 {
 protected:
 	int hp;
 	int point;
-	int weapon;
+	int shoot_timer;
+	
+	BulletsSpawner* weapon;
 
 public:
 	//コンストラクタ
@@ -21,5 +24,7 @@ public:
 
 	//ダメージを受けた時の処理
 	void Hit()override;
+	//現在座標の取得
+	void GetPosition()override;
 };
 

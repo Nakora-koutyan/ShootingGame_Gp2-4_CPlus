@@ -22,7 +22,7 @@ void NwaySpawner::Update()
 void NwaySpawner::Draw()
 {
 }
-void NwaySpawner::Shoot(GameMain* GameMain)
+void NwaySpawner::Shoot(GameMain* GameMain,float angle,float x,float y)
 {
 	for (int i = 0; i < 89; i++)
 	{

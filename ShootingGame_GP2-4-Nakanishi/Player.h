@@ -21,5 +21,6 @@ public:
 
 	//ƒ_ƒ[ƒW‚ğó‚¯‚½‚Ìˆ—
 	void Hit()override;
+	void GetPosition()override;
 };
 

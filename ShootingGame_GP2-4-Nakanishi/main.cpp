@@ -28,7 +28,7 @@ int WINAPI WinMain(_In_ HINSTANCE  hInstance, _In_opt_ HINSTANCE hPrevInstance, 
 	
 	while ((ProcessMessage() == 0) && (SceneMng.Update() != nullptr))
 	{
-		ClearDrawScreen();		//‰æ–Ê‚Ì‰Šú‰»
+		
 		PadInput::UpdateKey();	//“ü—Íˆ—
 
 		//‹­§I—¹
@@ -36,7 +36,7 @@ int WINAPI WinMain(_In_ HINSTANCE  hInstance, _In_opt_ HINSTANCE hPrevInstance, 
 		{
 			break;
 		}
-
+		ClearDrawScreen();		//‰æ–Ê‚Ì‰Šú‰»
 		SceneMng.Draw();
 		ScreenFlip();	//— ‰æ–Ê‚Ì“à—e‚ğ•\‰æ–Ê‚É”½‰f‚·‚é
 	};

@@ -25,6 +25,6 @@ public:
 	void Draw()override;
 
 	//’e‚Ì”­Ëˆ—
-	void Shoot(GameMain *GameMain)override;
+	void Shoot(GameMain *GameMain,float angle,float x,float y)override;
 };
 

@@ -1,4 +1,5 @@
 #include "Title.h"
+#include "GameMain.h"
 
 Title::Title()
 {

@@ -31,7 +31,7 @@ bool PadInput::OnButton(int button)
 //ƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚Ä‚¢‚éŠÔ
 bool PadInput::OnPressed(int button)
 {
-	bool ret = (now_key[button == 1]);
+	bool ret = (now_key[button] == 1);
 	return ret;
 }
 
