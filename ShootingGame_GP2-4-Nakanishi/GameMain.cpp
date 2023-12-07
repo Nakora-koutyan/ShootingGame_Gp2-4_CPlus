@@ -56,9 +56,9 @@ void GameMain::Draw() const
 	player_class->Draw();				//PlayerクラスのDrawを読込・実行
 	enemy_class[9]->Draw();				//EnemyクラスのDrawを読込・実行
 }
-void GameMain::SpawnBullet(float speed, float angle, float acceleration, float angulVelocity,float x,float y)
+void GameMain::SpawnBullet(float speed, float angle, float acceleration, float angulVelocity, float x, float y, int bullets_flg)
 {
-	bullets[now_bullets] = new Bullet(speed, angle, acceleration, angulVelocity,x,y);
+	bullets[now_bullets] = new Bullet(speed, angle, acceleration, angulVelocity, x, y, bullets_flg);
 	if (++now_bullets >= MAX_BALLETS)
 	{
 		now_bullets = 0;

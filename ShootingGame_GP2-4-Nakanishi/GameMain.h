@@ -36,6 +36,6 @@ public:
 	void HitCheck();
 
 	//弾の配列に新しくデータを作成する
-	void SpawnBullet(float speed,float angle,float acceleration,float angulVelocity, float x,float y);
+	void SpawnBullet(float speed,float angle,float acceleration,float angulVelocity, float x,float y, int bullets_flg);
 };
 
